@@ -62,7 +62,7 @@ export class ImagenesService {
       console.error('No se ha encontrado la imagen con id ' + id);
     } else {
       // Se modifica la imagen auxiliar añadiendo el comentario
-      buscaImagen['comentarios'].push({usuario, comentario});
+      (buscaImagen[0]['comentarios']).push({usuario, comentario});
       // Se cambia la imagen antigua por la nueva (con el nuevo comentario)
       IMAGENES.map(i => i.id == id ? buscaImagen : i);
     }

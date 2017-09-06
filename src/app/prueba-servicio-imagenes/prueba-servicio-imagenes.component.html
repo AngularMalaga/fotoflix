@@ -17,16 +17,27 @@
 <hr>
 
 <h2>Imagen con id = 7</h2>
-  <img src="/assets/img/{{imagen7.fichero}}"><br>
-  Id: {{imagen7.id}}<br>
-  Título: {{imagen7.titulo}}<br>
-  Descripción: {{imagen7.descripcion}}<br>
-  Fichero: {{imagen7.fichero}}<br>
-  etiquetas: 
-    <ng-container *ngFor="let e of imagen7.etiquetas">
-      {{ e }} 
-    </ng-container>  
-  <br>
+<img src="/assets/img/{{imagen7.fichero}}"><br>
+Id: {{imagen7.id}}<br>
+Título: {{imagen7.titulo}}<br>
+Descripción: {{imagen7.descripcion}}<br>
+Fichero: {{imagen7.fichero}}<br>
+etiquetas: 
+<ng-container *ngFor="let e of imagen7.etiquetas">
+  {{ e }} 
+</ng-container>  
+<br>
+<h3>Comentarios</h3>
+<p *ngFor="let c of imagen7.comentarios">
+  <b>{{ c.usuario }}:</b> {{c.comentario}}
+</p>
+
+<h3>Inserta un comentario</h3>
+<b>Nombre: </b><input #nombreUsuario type="text"><br>
+<b>Comentario: </b><br>
+<textarea #texto cols="30" rows="10"></textarea><br>
+<button (click)="enviaComentario(nombreUsuario.value, texto.value)">Enviar comentario</button>
+
 <hr>
 
 <h2>Todas las etiquetas</h2>

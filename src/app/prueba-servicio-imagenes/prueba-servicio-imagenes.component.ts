@@ -25,4 +25,8 @@ export class PruebaServicioImagenesComponent implements OnInit {
     this.etiquetas = this.imagenesService.etiquetas();
   }
 
+  enviaComentario(usuario: string, texto) {
+    this.imagenesService.insertaComentario(7, usuario, texto);
+  }
+
 }
