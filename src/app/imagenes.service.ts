@@ -22,7 +22,7 @@ export class ImagenesService {
   imagenPorId(id: number): Imagen {
     let buscaImagen = IMAGENES.filter(i => i.id == id);
     
-    if (buscaImagen.length === 0) {
+    if (buscaImagen.length === 0) { // No existe una imagen con el id indicado
       console.error('No se ha encontrado la imagen con id ' + id);
       return null;
     } else {
@@ -46,5 +46,25 @@ export class ImagenesService {
     return IMAGENES
       .reduce((a, b) => a.concat(b.etiquetas), []) // junta todas las etiquetas
       .reduce((a, b) => a.includes(b) ? a : a.concat(b) , []); // elimina las repeticiones
+  }
+
+  /**
+   * Inserta un comentario en una imagen sabiendo el id.
+   * 
+   * @param id identificador de la imagen
+   * @param usuario nombre de usuario
+   * @param comentario comentario que se quiere insertar
+   */
+  insertaComentario(id: number, usuario: string, comentario: string) {
+    let buscaImagen = IMAGENES.filter(i => i.id == id);
+    
+    if (buscaImagen.length === 0) { // No existe una imagen con el id indicado
+      console.error('No se ha encontrado la imagen con id ' + id);
+    } else {
+      // Se modifica la imagen auxiliar añadiendo el comentario
+      buscaImagen['comentarios'].push({usuario, comentario});
+      // Se cambia la imagen antigua por la nueva (con el nuevo comentario)
+      IMAGENES.map(i => i.id == id ? buscaImagen : i);
+    }
   }
 }
