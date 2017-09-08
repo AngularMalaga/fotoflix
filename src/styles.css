@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin:0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+:root {
+    --black:#202023;
+    --light-gray:#F3F5F6;
+    --gray:#D2D2D3;
+    --blue:#0091DC;
+}
+
+.container{
+    width: 100%;
+    margin-top:50px;
+}
+
+.padding{
+    padding:24px;
+}
