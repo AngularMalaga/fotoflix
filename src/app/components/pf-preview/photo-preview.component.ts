@@ -17,6 +17,10 @@ export class PhotoPreviewComponent implements OnInit {
   ngOnInit() {
   }
 
+  showDetails(){
+
+  }
+  
   // Change div class to hide info or show it when hovered
   onHighLightChange(isHovered){
     this.isHovered = isHovered;
