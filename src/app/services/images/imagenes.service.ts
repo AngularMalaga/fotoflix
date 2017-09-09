@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import { IMAGENES } from './imagenes';
-import { Imagen } from "app/imagen";
+import { IMAGES } from "assets/data/images";
+import { PFImage } from "app/models/pf-image";
 
 @Injectable()
-export class ImagenesService {
+export class PFImageService {
 
   constructor() { }
 
   /**
    * Devuelve todas las imágenes.
    */
-  imagenes(): Imagen[] {
-    return IMAGENES;
+  imagenes(): PFImage[] {
+    return IMAGES;
   }
 
   /**
@@ -19,8 +19,8 @@ export class ImagenesService {
    * 
    * @param id identificador de la imagen
    */
-  imagenPorId(id: number): Imagen {
-    let buscaImagen = IMAGENES.filter(i => i.id == id);
+  imagenPorId(id: number): PFImage {
+    let buscaImagen = IMAGES.filter(i => i.id == id);
     
     if (buscaImagen.length === 0) { // No existe una imagen con el id indicado
       console.error('No se ha encontrado la imagen con id ' + id);
@@ -35,16 +35,16 @@ export class ImagenesService {
    * 
    * @param etiqueta etiqueta que se quiere buscar, por ej. naturaleza, comida, etc.
    */
-  imagenesPorEtiqueta(etiqueta: string): Imagen[] {
-    return IMAGENES.filter(i => i.etiquetas.includes(etiqueta));
+  imagenesPorEtiqueta(etiqueta: string): PFImage[] {
+    return IMAGES.filter(i => i.labels.includes(etiqueta));
   }
 
   /**
    * Devuelve todas las etiquetas encontradas en las imágenes.
    */
   etiquetas(): string[] {
-    return IMAGENES
-      .reduce((a, b) => a.concat(b.etiquetas), []) // junta todas las etiquetas
+    return IMAGES
+      .reduce((a, b) => a.concat(b.labels), []) // junta todas las etiquetas
       .reduce((a, b) => a.includes(b) ? a : a.concat(b) , []); // elimina las repeticiones
   }
 
@@ -56,7 +56,7 @@ export class ImagenesService {
    * @param comentario comentario que se quiere insertar
    */
   insertaComentario(id: number, usuario: string, comentario: string) {
-    let buscaImagen = IMAGENES.filter(i => i.id == id);
+    let buscaImagen = IMAGES.filter(i => i.id == id);
     
     if (buscaImagen.length === 0) { // No existe una imagen con el id indicado
       console.error('No se ha encontrado la imagen con id ' + id);
@@ -64,7 +64,7 @@ export class ImagenesService {
       // Se modifica la imagen auxiliar añadiendo el comentario
       (buscaImagen[0]['comentarios']).push({usuario, comentario});
       // Se cambia la imagen antigua por la nueva (con el nuevo comentario)
-      IMAGENES.map(i => i.id == id ? buscaImagen : i);
+      IMAGES.map(i => i.id == id ? buscaImagen : i);
     }
   }
 }

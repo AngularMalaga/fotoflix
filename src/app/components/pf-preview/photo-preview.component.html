@@ -1,0 +1,21 @@
+<div 
+    class="col-md-4 pp-card-container" 
+    [ngStyle]="{
+        'background-image': 'url('+image?.imageUrl+'), url(assets/img/default.png'
+        }"
+    photoHighLight
+    (onPhotoHighLight)="onHighLightChange($event)"
+    [routerLink]="'/photo/'+image.id" routerLinkActive="active">
+    <div class="pp-card-content" *ngIf="isHovered">
+        <div class="col-xs-9">
+            <h3>{{image?.title}}</h3>
+        </div>
+        <div class="col-xs-3" style="min-height: 48px;">
+            <div class="options-ribbon">
+                <span class="glyphicon glyphicon-heart"></span>
+                <p class="inline-text">{{image?.likes}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
