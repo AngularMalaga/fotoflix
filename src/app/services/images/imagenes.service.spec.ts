@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { ImagenesService } from './imagenes.service';
+import { PFImageService } from './imagenes.service';
 
 describe('ImagenesService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [ImagenesService]
+      providers: [PFImageService]
     });
   });
 
-  it('should be created', inject([ImagenesService], (service: ImagenesService) => {
+  it('should be created', inject([PFImageService], (service: PFImageService) => {
     expect(service).toBeTruthy();
   }));
 });

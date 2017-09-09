@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ImagenesService } from "app/imagenes.service";
-import { Imagen } from "app/imagen";
+import { PFImageService } from "app/services/images/imagenes.service";
+import { PFImage } from "app/models/pf-image";
 
 @Component({
   selector: 'app-prueba-servicio-imagenes',
@@ -9,13 +9,13 @@ import { Imagen } from "app/imagen";
 })
 export class PruebaServicioImagenesComponent implements OnInit {
 
-  imagenes: Imagen[];
-  imagenesDeNaturaleza: Imagen[];
-  imagenesDeComida: Imagen[];
-  imagen7: Imagen;
+  imagenes: PFImage[];
+  imagenesDeNaturaleza: PFImage[];
+  imagenesDeComida: PFImage[];
+  imagen7: PFImage;
   etiquetas: string[];
 
-  constructor(private imagenesService: ImagenesService) { }
+  constructor(private imagenesService: PFImageService) { }
 
   ngOnInit() {
     this.imagenes = this.imagenesService.imagenes();
