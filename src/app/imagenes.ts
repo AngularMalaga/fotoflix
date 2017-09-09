@@ -103,5 +103,37 @@ export const IMAGENES = [
     fichero: "pareja.jpg",
     etiquetas: ["hombre", "mujer", "pareja", "bicicleta", "naturaleza"],
     comentarios: []
+  },
+  {
+    id: 10,
+    titulo: "Bicicleta verde con flores",
+    descripcion: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
+    fichero: "biciverde.jpg",
+    etiquetas: ["bicicleta", "verde", "flores"],
+    comentarios: []
+  },
+  {
+    id: 11,
+    titulo: "Diente de león",
+    descripcion: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
+    fichero: "dienteleon.jpg",
+    etiquetas: ["planta", "blanco", "naturaleza"],
+    comentarios: []
+  },
+  {
+    id: 12,
+    titulo: "Chica en moto",
+    descripcion: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
+    fichero: "guzzi.jpg",
+    etiquetas: ["chica", "mujer", "moto", "Guzzi", "naturaleza", "flores", "amapolas"],
+    comentarios: []
+  },
+  {
+    id: 13,
+    titulo: "La Farola de Málaga",
+    descripcion: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
+    fichero: "lafarola.jpg",
+    etiquetas: ["Málaga", "puerto", "faro", "farola", "barcos", "mar", "paseo", "muelle"],
+    comentarios: []
   }
 ];
