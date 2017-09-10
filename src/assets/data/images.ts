@@ -8,9 +8,15 @@ export const IMAGES = [
     labels: ["animal", "ave", "naturaleza"],
     likes: 23,
     references: 12,
+    owner:{
+      id: 1,
+      userName: "ragnar@lothbrok",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/8/"
+    },
     commets: [{
       id: 1,
       userName: "Alan Brito",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/10/",
       comment: "Con su mirada otea el horizonte.",
       createdAt: new Date("2017-10-10T00:00:00.000")
     }],
@@ -25,6 +31,11 @@ export const IMAGES = [
     labels: ["barca", "rio", "paisaje", "naturaleza", "bosque"],
     likes: 65,
     references: 43,
+    owner:{
+      id: 2,
+      userName: "daeneris@targarean",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/5/"
+    },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
@@ -37,10 +48,16 @@ export const IMAGES = [
     labels: ["mujer", "chica", "naturaleza", "lavanda"],
     likes: 111,
     references: 12,
+    owner:{
+      id: 3,
+      userName: "harry@potter",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
+    },
     commets: [{
       id: 2,
       userName: "Elena Nito",
       comment: "Qué bien huele la la lavanda después de un día de lluvia.",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/12/",
       createdAt: new Date("2017-10-10T00:00:00.000")
     }],
     createdAt: new Date("2017-10-10T00:00:00.000")
@@ -54,16 +71,23 @@ export const IMAGES = [
     labels: ["comida", "desayuno", "huevos", "pan", "flores", "fruta"],
     likes: 98,
     references: 6,
+    owner:{
+      id: 4,
+      userName: "luke@skywalker",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/7/"
+    },
     commets: [{
       id: 3,
       userName: "Elba Lazo",
       comment: "No hay nada como empezar el día con un desayuno de campeones.",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/10/",
       createdAt: new Date("2017-10-10T00:00:00.000")
     },
     {
       id: 4,
       userName: "Elsa Pato",
       comment: "Los huevos aportan proteinas al desayuno. Todas las mañanas me como un par de huevos fritos.",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/9/",
       createdAt: new Date("2017-10-10T00:00:00.000")
     }],
     createdAt: new Date("2017-10-10T00:00:00.000")
@@ -77,6 +101,11 @@ export const IMAGES = [
     labels: ["comida", "postre", "dulce"],
     likes: 223,
     references: 114,
+    owner:{
+      id: 5,
+      userName: "john@snow",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/8/"
+    },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
@@ -89,6 +118,11 @@ export const IMAGES = [
     labels: ["comida", "fruta", "fresa"],
     likes: 99,
     references: 87,
+    owner:{
+      id: 1,
+      userName: "ragnar@lothbrok",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/4/"
+    },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
     
@@ -102,6 +136,11 @@ export const IMAGES = [
     labels: ["gato", "animal", "mascota", "negro"],
     likes: 45,
     references: 87,
+    owner:{
+      id: 6,
+      userName: "zipy@zape",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
+    },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
@@ -114,22 +153,30 @@ export const IMAGES = [
     labels: ["fruta", "comida", "verde"],
     likes: 2001,
     references: 543,
+    owner:{
+      id: 1,
+      userName: "ragnar@lothbrok",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/4/"
+    },
     commets: [{
       id: 5,
       userName: "Leandro Gado",
       comment: "Uvas con queso saben a beso.",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/10/",
       createdAt: new Date("2017-10-10T00:00:00.000")
     },
     {
       id: 6,
       userName: "Esteban Quito",
       comment: "La uva tiene muchos antioxidantes.",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/11/",
       createdAt: new Date("2017-10-10T00:00:00.000")
     },
     {
       id: 7,
       userName: "Elsa Pato",
       comment: "La uva es una fruta obtenida de la vid. Las uvas vienen en racimos, son pequeñas y dulces. Se comen frescas o se utilizan para producir agraz, mosto, vino, vinagre y pisco. Crecen agrupadas en racimos de entre 6 y 300 uvas. Pueden ser negras, moradas, amarillas, doradas, púrpura, rosadas, marrones, anaranjadas o blancas, aunque estas últimas son realmente verdes y evolutivamente proceden de las uvas rojas con la mutación de dos genes que hace que no desarrollen antocianinas, siendo estas las que dan la pigmentación.",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/12/",
       createdAt: new Date("2017-10-10T00:00:00.000")
     }],
     createdAt: new Date("2017-10-10T00:00:00.000")
@@ -143,6 +190,11 @@ export const IMAGES = [
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/niebla.jpg",
     labels: ["paisaje", "castillo", "lago", "niebla", "naturaleza"],
+    owner:{
+      id: 3,
+      userName: "harry@potter",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
+    },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
@@ -155,6 +207,11 @@ export const IMAGES = [
     labels: ["hombre", "mujer", "pareja", "bicicleta", "naturaleza"],
     likes: 999999999999,
     references: 999999999999,
+    owner:{
+      id: 1,
+      userName: "ragnar@lothbrok",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/4/"
+    },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
@@ -167,6 +224,11 @@ export const IMAGES = [
     labels: ["planta", "blanco", "naturaleza"],
     likes: 2001,
     references: 543,
+    owner:{
+      id: 3,
+      userName: "harry@potter",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
+    },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
@@ -179,6 +241,11 @@ export const IMAGES = [
     labels: ["chica", "mujer", "moto", "Guzzi", "naturaleza", "flores", "amapolas"],
     likes: 2001,
     references: 543,
+    owner:{
+      id: 1,
+      userName: "ragnar@lothbrok",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/4/"
+    },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
@@ -191,6 +258,11 @@ export const IMAGES = [
     labels: ["Málaga", "puerto", "faro", "farola", "barcos", "mar", "paseo", "muelle"],
     likes: 2001,
     references: 543,
+    owner:{
+      id: 3,
+      userName: "harry@potter",
+      thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
+    },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   }

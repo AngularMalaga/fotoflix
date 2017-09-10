@@ -1,5 +1,59 @@
 <div class="photo-page">
-  <p>
-    photo-detail works!
-  </p>
+  <div class="photo-container">
+    <div class="go-back-container" (click)="goBack()">
+      <span class="glyphicon glyphicon-arrow-left go-back-span"></span>
+      <span class="go-back-span">Regresar a la exploración</span>
+    </div>
+    <div class="image-centering">
+      <img class="photo-detail" [src]="photo?.imageUrl">
+    </div>
+    <div class="photo-info row">
+      <div class="col-xs-10">
+          <h3>{{photo?.title}}</h3>
+      </div>
+      <div class="col-xs-2" style="min-height: 48px;">
+          <div class="options-ribbon">
+              <span class="glyphicon glyphicon-heart"></span>
+              <p class="inline-text">{{photo?.likes}}</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row photo-author">
+    <div class="col-md-8 owner-container">
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-1">
+          <div  class="round-picture" 
+                [ngStyle]="{'background-image': 'url('+photo?.owner?.thumbUrl+'), url(assets/img/default_profile.png)'}">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="owner-name">{{photo?.owner?.userName}} 
+              <button (click)="onFollowButtonClick()" class="btn btn-default" style="float: right;">
+                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                  SEGUIR
+              </button>
+          </h3>
+          <h4 style="text-align: left;">{{photo?.title}}</h4>
+          <p style="text-align: justify;">{{photo?.description}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 photo-comments-container">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <div  class="round-picture" 
+                  [ngStyle]="{'background-image': 'url('+photo?.commets[0].thumbUrl+'), url(assets/img/default_profile.png)'}">
+            </div>
+          </div>
+          <div class="col-md-9" style="padding-left: 0px;">
+            <h4 class="owner-name">{{photo?.commets.length > 0 ? photo.commets[0].userName : ''}}</h4>
+            <p style="text-align: left;">{{photo?.commets.length > 0 ? photo.commets[0].comment : ''}}</p>
+          </div>
+        </div>
+    </div>
+  </div>
 </div>

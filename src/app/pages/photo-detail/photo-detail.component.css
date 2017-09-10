@@ -1,5 +1,75 @@
 .photo-page{
     height: calc( 100vh - 164px); 
     width: 100%;
+    margin-top: -5px;
+    margin-bottom: 15vh;
+}
+
+.go-back-container{
+    cursor: pointer;
     padding: 24px;
+}
+
+.go-back-span{
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 6px;
+}
+
+.photo-container{
+    background-color: #202023;
+    width: 100%;
+    height: auto;
+}
+
+.photo-author{
+    padding-bottom: 10vh;
+}
+
+.image-centering{
+    width: 100%;
+    text-align: center;
+}
+.photo-detail{
+    text-align: center;
+    max-height: 400px;
+    width: auto;
+}
+
+.photo-info{
+    padding: 24px;
+    color: white;
+}
+
+.options-ribbon{
+    position: absolute; 
+    bottom: 0px; 
+    left: 0px;
+}
+
+.inline-text{
+    display: inline-block; 
+    padding-left: 6px; 
+    margin-bottom: 2px; 
+    font-weight: bold;
+}
+
+.owner-container{
+    text-align: center;
+}
+
+.round-picture{
+    margin-top: 2em;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    float: right;
+}
+
+.owner-name{
+    width: 100%;
+    color: #2980b9;
+    font-weight: bold;
+    text-align: left;
 }

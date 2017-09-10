@@ -9,13 +9,14 @@ body{
     --light-gray:#F3F5F6;
     --gray:#D2D2D3;
     --blue:#0091DC;
+    --white: #ffffff;
 }
 
 .container{
     width: 100%;
     margin-top:64px;
+    padding: 0px;
 }
 
 .padding{
-    padding:24px;
 }

@@ -5,7 +5,7 @@
         }"
     photoHighLight
     (onPhotoHighLight)="onHighLightChange($event)"
-    [routerLink]="'/photo/'+image.id" routerLinkActive="active">
+    routerLink="/photo/{{image?.id}}" routerLinkActive="active">
     <div class="pp-card-content" *ngIf="isHovered">
         <div class="col-xs-9">
             <h3>{{image?.title}}</h3>

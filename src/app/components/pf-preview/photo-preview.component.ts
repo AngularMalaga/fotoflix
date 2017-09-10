@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PFImage } from "app/models/pf-image";
+import { Router } from "@angular/router";
+import { PhotoDetailComponent } from "app/pages/photo-detail/photo-detail.component";
 
 @Component({
   selector: 'pf-photo-preview',
@@ -12,13 +14,9 @@ export class PhotoPreviewComponent implements OnInit {
 
   public isHovered: boolean = false;
   
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-  }
-
-  showDetails(){
-
   }
   
   // Change div class to hide info or show it when hovered
