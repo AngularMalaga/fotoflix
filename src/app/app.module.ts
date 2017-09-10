@@ -10,6 +10,7 @@ import { PFImageService } from 'app/services/images/imagenes.service';
 import { PhotoPreviewComponent } from 'app/components/pf-preview/photo-preview.component';
 import { PhotoHighlightDirective } from 'app/directives/photo-highlight/photo-highlight.directive';
 import { PhotoDetailComponent } from './pages/photo-detail/photo-detail.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 const appRoutes: Routes = [
   { path: 'test', component: PruebaServicioImagenesComponent },
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     DiscoverComponent,
     PhotoPreviewComponent,
     PhotoHighlightDirective,
-    PhotoDetailComponent
+    PhotoDetailComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,

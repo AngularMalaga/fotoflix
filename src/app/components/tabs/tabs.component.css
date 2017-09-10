@@ -1,0 +1,29 @@
+.tabs-container{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+    padding-left:50px;
+}
+
+.tab{
+    display: inline-block;
+    max-width: 100px;
+    height: 55px;
+    margin-top:5px;
+    
+    padding:15px;
+
+
+}
+
+.tab > a{
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tab.active{
+    border-bottom:5px solid var(--blue);
+    
+}

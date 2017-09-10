@@ -1,0 +1,6 @@
+<div class="tabs-container">
+  <div *ngFor="let tab of tabs; let i = index" class="tab" [ngClass]="{'active': activeTab == i}" (click)="changeActiveTab(i)">
+    <a>{{tab}}</a>
+  </div>
+  
+</div>

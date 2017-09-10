@@ -12,9 +12,17 @@ export class DiscoverComponent implements OnInit {
   public images: PFImage[] = [];
   constructor( public imageService: PFImageService) { }
 
-  ngOnInit() {
+  public tabs = ['Explorar','Tendencias'];
 
+  ngOnInit() {
     // Load Images structure from "server"
     this.images = this.imageService.imagenes();
   }
+
+  //TODO tendremos uqe añadir los filtros para la imagenes en funcion de el tab seleccionado
+  selectedTabChange(index){
+    console.log("Cambio el tab", index);
+  }
+
+  
 }
