@@ -1,3 +1,5 @@
-  <div class="discover-page">
-    <pf-photo-preview [photo]="images[0]"></pf-photo-preview>
+  <div class="discover-page padding">
+    <div class="row">
+      <pf-photo-preview *ngFor="let image of images" [photo]="image"></pf-photo-preview>
+    </div>
   </div>

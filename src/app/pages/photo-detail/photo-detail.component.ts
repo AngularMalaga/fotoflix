@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from "@angular/router";
-import { PFImageService } from "app/services/images/imagenes.service";
-import { PFImage } from "app/models/pf-image";
+import { ActivatedRoute, Router } from '@angular/router';
+import { PFImageService } from 'app/services/images/imagenes.service';
+import { PFImage } from 'app/models/pf-image';
 
 @Component({
   selector: 'app-photo-detail',
@@ -11,7 +11,7 @@ import { PFImage } from "app/models/pf-image";
 export class PhotoDetailComponent implements OnInit {
 
   public photo: PFImage;
-  constructor(  private router: Router, 
+  constructor(  private router: Router,
                 private routerParams: ActivatedRoute,
                 private imageService: PFImageService) { }
 
@@ -24,11 +24,11 @@ export class PhotoDetailComponent implements OnInit {
     });
   }
 
-  onFollowButtonClick(){
+  onFollowButtonClick() {
     // TODO: Follow user
   }
 
-  goBack(){
+  goBack() {
     this.router.navigate(['/discover']);
   }
 

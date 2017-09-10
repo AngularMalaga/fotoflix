@@ -1,5 +1,5 @@
 .photo-page{
-    height: calc( 100vh - 164px); 
+    min-height: calc( 100vh - 164px); 
     width: 100%;
     margin-top: -5px;
     margin-bottom: 15vh;
@@ -18,7 +18,7 @@
 }
 
 .photo-container{
-    background-color: #202023;
+    background-color: #1B1B1F;
     width: 100%;
     height: auto;
 }

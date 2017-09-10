@@ -6,9 +6,9 @@ import { PruebaServicioImagenesComponent } from './prueba-servicio-imagenes/prue
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DiscoverComponent } from './pages/discover/discover.component';
-import { PFImageService } from "app/services/images/imagenes.service";
-import { PhotoPreviewComponent } from "app/components/pf-preview/photo-preview.component";
-import { PhotoHighlightDirective } from "app/directives/photo-highlight/photo-highlight.directive";
+import { PFImageService } from 'app/services/images/imagenes.service';
+import { PhotoPreviewComponent } from 'app/components/pf-preview/photo-preview.component';
+import { PhotoHighlightDirective } from 'app/directives/photo-highlight/photo-highlight.directive';
 import { PhotoDetailComponent } from './pages/photo-detail/photo-detail.component';
 
 const appRoutes: Routes = [

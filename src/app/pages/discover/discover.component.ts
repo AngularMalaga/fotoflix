@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PFImageService } from "app/services/images/imagenes.service";
-import { PFImage } from "app/models/pf-image";
+import { PFImageService } from 'app/services/images/imagenes.service';
+import { PFImage } from 'app/models/pf-image';
 
 @Component({
   selector: 'app-discover',
