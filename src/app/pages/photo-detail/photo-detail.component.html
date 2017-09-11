@@ -9,12 +9,14 @@
     </div>
     <div class="photo-info row">
       <div class="col-xs-10">
-          <h3>{{photo?.title}}</h3>
+          <h3 class="photo-title">{{photo?.title}} <span class="brief">- {{photo?.brief}}</span></h3>
       </div>
       <div class="col-xs-2" style="min-height: 48px;">
           <div class="options-ribbon">
               <span class="glyphicon glyphicon-heart"></span>
               <p class="inline-text">{{photo?.likes}}</p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              <p class="inline-text">{{photo?.references}}</p>
           </div>
       </div>
     </div>
@@ -42,16 +44,16 @@
       </div>
     </div>
     <div class="col-md-4 photo-comments-container">
-        <div class="row">
+        <div class="row" *ngFor="let comment of photo.commets">
           <div class="col-md-1"></div>
           <div class="col-md-2">
             <div  class="round-picture" 
-                  [ngStyle]="{'background-image': 'url('+photo?.commets[0].thumbUrl+'), url(assets/img/default_profile.png)'}">
+                  [ngStyle]="{'background-image': 'url('+comment.thumbUrl+'), url(assets/img/default_profile.png)'}">
             </div>
           </div>
           <div class="col-md-9" style="padding-left: 0px;">
-            <h4 class="owner-name">{{photo?.commets.length > 0 ? photo.commets[0].userName : ''}}</h4>
-            <p style="text-align: left;">{{photo?.commets.length > 0 ? photo.commets[0].comment : ''}}</p>
+            <h4 class="owner-name">{{ comment.userName }}</h4>
+            <p style="text-align: left;">{{ comment.comment }}</p>
           </div>
         </div>
     </div>

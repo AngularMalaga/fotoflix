@@ -50,7 +50,8 @@
 
 .inline-text{
     display: inline-block; 
-    padding-left: 6px; 
+    padding-left: 2px; 
+    padding-right: 2px; 
     margin-bottom: 2px; 
     font-weight: bold;
 }
@@ -72,4 +73,13 @@
     color: #2980b9;
     font-weight: bold;
     text-align: left;
+}
+
+.brief{
+    font-size: 0.8em;
+    color: #cccccc;
+}
+
+.photo-title{
+    color: #f1c40f;
 }

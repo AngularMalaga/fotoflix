@@ -7,13 +7,20 @@
     (onPhotoHighLight)="onHighLightChange($event)"
     routerLink="/photo/{{image?.id}}" routerLinkActive="active">
     <div class="pp-card-content" *ngIf="isHovered">
-        <div class="col-xs-9" style="cursor:pointer;">
-            <h3>{{image?.title}}</h3>
+        <div class="col-xs-10" style="cursor:pointer;">
+            <h3 class="title">{{image?.title}}</h3>
+            <p class="subtitle">{{image?.brief}}</p>
         </div>
-        <div class="col-xs-3" style="min-height: 48px;">
-            <div class="options-ribbon" >
-                <span class="glyphicon glyphicon-heart"></span>
-                <p class="inline-text">{{image?.likes}}</p>
+        <div class="col-xs-2" style="min-height: 48px;">
+            <div class="options-ribbon row">
+                <div class="col-xs-6 ribbon-option">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <p class="inline-text">{{image?.likes}}</p>
+                </div>
+                <div class="col-xs-6 ribbon-option">
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                    <p class="inline-text">{{image?.references}}</p>
+                </div>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
   <app-tabs [tabs]="tabs" (onTabsSelectedChange)="selectedTabChange($event)"></app-tabs>
   <div class="discover-page" >
     <div class="row">
-      <pf-photo-preview *ngFor="let image of images" [photo]="image"></pf-photo-preview>
+      <pf-photo-preview [@fadeIn]="'active'" *ngFor="let image of images" [photo]="image"></pf-photo-preview>
     </div>
   </div>

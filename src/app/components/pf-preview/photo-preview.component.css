@@ -27,11 +27,19 @@
 
 .inline-text{
     display: inline-block; 
-    padding-left: 6px; 
+    padding-left: 2px; 
+    padding-right: 2px; 
     margin-bottom: 2px; 
     font-weight: bold;
 }
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.subtitle{
+    color: white;
+}
+
+.ribbon-option > span.gliph-icon p.inline-text{
 }

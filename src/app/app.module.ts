@@ -11,6 +11,7 @@ import { PhotoPreviewComponent } from 'app/components/pf-preview/photo-preview.c
 import { PhotoHighlightDirective } from 'app/directives/photo-highlight/photo-highlight.directive';
 import { PhotoDetailComponent } from './pages/photo-detail/photo-detail.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: 'test', component: PruebaServicioImagenesComponent },
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [PFImageService],

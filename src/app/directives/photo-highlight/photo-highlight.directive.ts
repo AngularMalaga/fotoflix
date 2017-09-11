@@ -19,7 +19,7 @@ export class PhotoHighlightDirective {
 
 
   onMouseEnter() { 
-      this.onPhotoHighLight.emit(true);
+    this.onPhotoHighLight.emit(true);
   }
   onMouseLeave() { 
     this.onPhotoHighLight.emit(false);

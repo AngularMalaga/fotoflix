@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { PFImageService } from 'app/services/images/imagenes.service';
 import { PFImage } from 'app/models/pf-image';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  sequence
+} from '@angular/animations';
 
 @Component({
   selector: 'app-discover',
