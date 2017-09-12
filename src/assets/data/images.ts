@@ -2,7 +2,7 @@ export const IMAGES = [
   {
     id: 1,
     title: "Águila",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorrar ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/aguila.jpg",
     labels: ["animal", "ave", "naturaleza"],
@@ -25,7 +25,7 @@ export const IMAGES = [
   {
     id: 2,
     title: "Barca en la orilla",
-    brief: "Don’t worry about what other people fucking think. What’s important is the",
+    brief: "Don’t worry about what other people think. What’s important is the",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/barca.jpg",
     labels: ["barca", "rio", "paisaje", "naturaleza", "bosque"],
@@ -42,7 +42,7 @@ export const IMAGES = [
   {
     id: 3,
     title: "Chica sobre lavanda",
-    brief: "Never, never assume that what you have achieved is fucking good enough.",
+    brief: "Never, never assume that what you have achieved is good enough.",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/chicalavanda.jpg",
     labels: ["mujer", "chica", "naturaleza", "lavanda"],
@@ -65,7 +65,7 @@ export const IMAGES = [
   {
     id: 4,
     title: "Desayuno",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/desayuno.jpg",
     labels: ["comida", "desayuno", "huevos", "pan", "flores", "fruta"],
@@ -95,7 +95,7 @@ export const IMAGES = [
   {
     id: 5,
     title: "Postre",
-    brief: "Never, never assume that what you have achieved is fucking good enough.",
+    brief: "Never, never assume that what you have achieved is good enough.",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/dessert.jpg",
     labels: ["comida", "postre", "dulce"],
@@ -112,7 +112,7 @@ export const IMAGES = [
   {
     id: 6,
     title: "Fresas",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/fresas.jpg",
     labels: ["comida", "fruta", "fresa"],
@@ -125,12 +125,12 @@ export const IMAGES = [
     },
     commets: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
-    
+
   },
   {
     id: 7,
     title: "Gato negro",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/gatonegro.jpg",
     labels: ["gato", "animal", "mascota", "negro"],
@@ -147,7 +147,7 @@ export const IMAGES = [
   {
     id: 8,
     title: "Uva",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/rapes.jpg",
     labels: ["fruta", "comida", "verde"],
@@ -186,7 +186,7 @@ export const IMAGES = [
     likes: 165,
     references: 1212,
     title: "Castillo en la niebla",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/niebla.jpg",
     labels: ["paisaje", "castillo", "lago", "niebla", "naturaleza"],
@@ -201,7 +201,7 @@ export const IMAGES = [
   {
     id: 10,
     title: "Pareja en bicicleta",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/pareja.jpg",
     labels: ["hombre", "mujer", "pareja", "bicicleta", "naturaleza"],
@@ -218,7 +218,7 @@ export const IMAGES = [
   {
     id: 11,
     title: "Diente de león",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/dienteleon.jpg",
     labels: ["planta", "blanco", "naturaleza"],
@@ -235,7 +235,7 @@ export const IMAGES = [
   {
     id: 12,
     title: "Chica en moto",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/guzzi.jpg",
     labels: ["chica", "mujer", "moto", "Guzzi", "naturaleza", "flores", "amapolas"],
@@ -252,7 +252,7 @@ export const IMAGES = [
   {
     id: 13,
     title: "La Farola de Málaga",
-    brief: "Practice won’t get you anywhere if you mindlessly fucking practice the same",
+    brief: "Practice won’t get you anywhere if you mindlessly practice the same",
     description: "No puedor ahorarr ese hombree al ataquerl al ataquerl pupita torpedo. Por la gloria de mi madre se calle ustée hasta luego Lucas caballo blanco caballo negroorl a wan benemeritaar me cago en tus muelas. Te va a hasé pupitaa no te digo trigo por no llamarte Rodrigor diodeno quietooor llevame al sircoo papaar papaar.",
     imageUrl: "assets/img/lafarola.jpg",
     labels: ["Málaga", "puerto", "faro", "farola", "barcos", "mar", "paseo", "muelle"],
