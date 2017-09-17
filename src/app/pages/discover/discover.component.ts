@@ -19,7 +19,7 @@ export class DiscoverComponent implements OnInit {
     this.images = this.imageService.imagenes();
   }
 
-  //TODO tendremos uqe añadir los filtros para la imagenes en funcion de el tab seleccionado
+  // TODO: Añadir los filtros para la imagenes en funcion del tab seleccionado
   selectedTabChange(index){
     console.log("Índice de tab seleccionado: ", index);
   }
