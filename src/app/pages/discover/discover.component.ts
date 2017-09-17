@@ -1,14 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PFImageService } from 'app/services/images/imagenes.service';
 import { PFImage } from 'app/models/pf-image';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  sequence
-} from '@angular/animations';
 
 @Component({
   selector: 'app-discover',
@@ -29,7 +21,7 @@ export class DiscoverComponent implements OnInit {
 
   //TODO tendremos uqe añadir los filtros para la imagenes en funcion de el tab seleccionado
   selectedTabChange(index){
-    console.log("Cambio el tab", index);
+    console.log("Índice de tab seleccionado: ", index);
   }
 
   
