@@ -7,20 +7,23 @@
     (onPhotoHighLight)="onHighLightChange($event)"
     routerLink="/photo/{{image?.id}}" routerLinkActive="active">
     <div class="pp-card-content" *ngIf="isHovered">
-        <div class="col-xs-10" style="cursor:pointer;">
+        <div class="col-xs-9" style="cursor:pointer;">
             <h3 class="title">{{image?.title}}</h3>
             <p class="subtitle">{{image?.brief}}</p>
         </div>
-        <div class="col-xs-2" style="min-height: 48px;">
-            <div class="options-ribbon row">
-                <div class="col-xs-6 ribbon-option">
-                    <span class="glyphicon glyphicon-heart"></span>
-                    <p class="inline-text">{{image?.likes}}</p>
+        <div class="col-xs-3" style="min-height:106px; position:relative">  
+            <div style="position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)">
+                <div class="row">
+                    <div class="col-xs-6" style="padding:0px;padding-right:10px;text-align:center">
+                        <span class="glyphicon glyphicon-heart" style="display:inherit; font-size:1.3em"></span>
+                        <p class="inline-text" >{{image?.likes}}</p>        
+                    </div>
+                    <div class="col-xs-6" style="padding:0px;text-align:center">
+                       <span class="glyphicon glyphicon-bookmark" style="display:inherit;font-size:1.3em"></span>
+                       <p class="inline-text" >{{image?.references}}</p>
+                    </div>
                 </div>
-                <div class="col-xs-6 ribbon-option">
-                    <span class="glyphicon glyphicon-bookmark"></span>
-                    <p class="inline-text">{{image?.references}}</p>
-                </div>
+               
             </div>
         </div>
     </div>
