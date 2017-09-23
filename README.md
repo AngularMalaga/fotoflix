@@ -2,7 +2,7 @@
 Aplicación de gestión de fotos.
 
 #Enlace de descarga
-https://drive.google.com/open?id=0B1jj1oYZ-tKEc1dXQ3drLWhab1U
+https://drive.google.com/open?id=0B1jj1oYZ-tKEZnJwdkJNTkgyRU0
 
 # Tareas propuestas: 
 * Tarea 1. Añade el comentario breve de la foto   (photo-detail.component.html)
