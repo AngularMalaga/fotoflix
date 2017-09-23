@@ -48,16 +48,16 @@
     <div class="col-md-4 photo-comments-container">
         <!-- Muestra todos comentario de esta foto -->
         <!-- Corrige un fallo que genera error -->
-        <div class="row" *ngFor="let comment of photo.comments">
+        <div class="row">
           <div class="col-md-1"></div>
           <div class="col-md-2">
             <div  class="round-picture" 
-                  [ngStyle]="{'background-image': 'url('+comment?.thumbUrl+'), url(assets/img/default_profile.png)'}">
+                  [ngStyle]="{'background-image': 'url('+photo.comments[0]?.comment?.thumbUrl+'), url(assets/img/default_profile.png)'}">
             </div>
           </div>
           <div class="col-md-9" style="padding-left: 0px;">
-            <h4 class="owner-name">{{ comment.userName }}</h4>
-            <p style="text-align: left;">{{ comment.comment }}</p>
+            <h4 class="owner-name">{{ photo?.comments[0]?.userName }}</h4>
+            <p style="text-align: left;">{{ photo?.comments[0]?.comment }}</p>
           </div>
         </div>
     </div>
