@@ -24,6 +24,7 @@ export class PhotoDetailComponent implements OnInit {
     });
   }
 
+  // Tarea 9. Aumentar el número de likes cuando se pulsa el botón
   onFollowButtonClick() {
     // TODO: Follow user
   }
