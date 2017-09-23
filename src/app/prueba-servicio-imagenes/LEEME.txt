@@ -1,2 +1,0 @@
-Este componente se utiliza para comprobar si el servicio ImagenesService funciona bien.
-Una vez que la aplicación esté hecha, este componente se puede borrar.

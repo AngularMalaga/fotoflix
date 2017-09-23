@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { PruebaServicioImagenesComponent } from './prueba-servicio-imagenes/prueba-servicio-imagenes.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DiscoverComponent } from './pages/discover/discover.component';
@@ -14,7 +13,6 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
-  { path: 'test', component: PruebaServicioImagenesComponent },
   { path: 'photo/:id', component: PhotoDetailComponent },
   { path: '**', component: DiscoverComponent }
 
@@ -23,7 +21,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    PruebaServicioImagenesComponent,
     NavbarComponent,
     FooterComponent,
     DiscoverComponent,

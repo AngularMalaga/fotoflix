@@ -13,6 +13,16 @@ export class PFImageService {
   imagenes(): PFImage[] {
     return IMAGES;
   }
+  /**
+   * Devuelve todas las imágenes.
+   */
+  imagenesExplorar(): PFImage[] {
+    let sortImg:any[];
+    sortImg = IMAGES.sort( (a:PFImage, b:PFImage) => {
+      return Math.floor((Math.random() * 1) + -1);
+    });
+    return sortImg.reverse();
+  }
 
   /**
    * Devuelve una imagen a partir de su id.
