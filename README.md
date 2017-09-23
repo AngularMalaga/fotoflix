@@ -11,9 +11,9 @@ https://drive.google.com/open?id=0B1jj1oYZ-tKEZnJwdkJNTkgyRU0
 * Tarea 4. Corrige un fallo  (photo-detail.component.html)
 * Tarea 5. Añadir el comentario real de la foto (photo-preview.component.html)
 * Tarea 6. Muestra todas las imágenes que haya en la estrucutra de datosTarea (discover.component.html)
-* Tarea 8. Añade otro tab y filtra la lista de imagenes en funcion del tab seleccionado (discover.component.ts)
-* Tarea 9. Aumentar el número de likes cuando se pulsa el botón (photo-detail.component.ts)
-* Tarea 10. Añadir referencias a las redes sociales (footer.component.html)
+* Tarea 7. Añade otro tab y filtra la lista de imagenes en funcion del tab seleccionado (discover.component.ts)
+* Tarea 8. Aumentar el número de likes cuando se pulsa el botón (photo-detail.component.ts)
+* Tarea 9. Añadir referencias a las redes sociales (footer.component.html)
 
 
 
