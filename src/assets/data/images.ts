@@ -13,7 +13,7 @@ export const IMAGES = [
       userName: "ragnar@lothbrok",
       thumbUrl: "http://lorempixel.com/128/128/fashion/8/"
     },
-    commets: [{
+    comments: [{
       id: 1,
       userName: "Alan Brito",
       thumbUrl: "http://lorempixel.com/128/128/fashion/10/",
@@ -36,7 +36,7 @@ export const IMAGES = [
       userName: "daeneris@targarean",
       thumbUrl: "http://lorempixel.com/128/128/fashion/5/"
     },
-    commets: [],
+    comments: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
   {
@@ -53,7 +53,7 @@ export const IMAGES = [
       userName: "harry@potter",
       thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
     },
-    commets: [{
+    comments: [{
       id: 2,
       userName: "Elena Nito",
       comment: "Qué bien huele la la lavanda después de un día de lluvia.",
@@ -76,7 +76,7 @@ export const IMAGES = [
       userName: "luke@skywalker",
       thumbUrl: "http://lorempixel.com/128/128/fashion/7/"
     },
-    commets: [{
+    comments: [{
       id: 3,
       userName: "Elba Lazo",
       comment: "No hay nada como empezar el día con un desayuno de campeones.",
@@ -106,7 +106,7 @@ export const IMAGES = [
       userName: "john@snow",
       thumbUrl: "http://lorempixel.com/128/128/fashion/8/"
     },
-    commets: [],
+    comments: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
   {
@@ -123,7 +123,7 @@ export const IMAGES = [
       userName: "ragnar@lothbrok",
       thumbUrl: "http://lorempixel.com/128/128/fashion/4/"
     },
-    commets: [],
+    comments: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
 
   },
@@ -141,7 +141,7 @@ export const IMAGES = [
       userName: "zipy@zape",
       thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
     },
-    commets: [],
+    comments: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
   {
@@ -158,7 +158,7 @@ export const IMAGES = [
       userName: "ragnar@lothbrok",
       thumbUrl: "http://lorempixel.com/128/128/fashion/4/"
     },
-    commets: [{
+    comments: [{
       id: 5,
       userName: "Leandro Gado",
       comment: "Uvas con queso saben a beso.",
@@ -195,7 +195,7 @@ export const IMAGES = [
       userName: "harry@potter",
       thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
     },
-    commets: [],
+    comments: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
   {
@@ -212,7 +212,7 @@ export const IMAGES = [
       userName: "ragnar@lothbrok",
       thumbUrl: "http://lorempixel.com/128/128/fashion/4/"
     },
-    commets: [],
+    comments: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
   {
@@ -229,7 +229,7 @@ export const IMAGES = [
       userName: "harry@potter",
       thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
     },
-    commets: [],
+    comments: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
   {
@@ -246,7 +246,7 @@ export const IMAGES = [
       userName: "ragnar@lothbrok",
       thumbUrl: "http://lorempixel.com/128/128/fashion/4/"
     },
-    commets: [],
+    comments: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   },
   {
@@ -263,7 +263,7 @@ export const IMAGES = [
       userName: "harry@potter",
       thumbUrl: "http://lorempixel.com/128/128/fashion/6/"
     },
-    commets: [],
+    comments: [],
     createdAt: new Date("2017-10-10T00:00:00.000")
   }
 ];

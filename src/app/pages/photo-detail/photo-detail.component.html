@@ -9,14 +9,16 @@
     </div>
     <div class="photo-info row">
       <div class="col-xs-10">
-          <h3 class="photo-title">{{photo?.title}} <span class="brief">- {{photo?.brief}}</span></h3>
+          <!-- Añade el comentario breve de la foto -->
+          <h3 class="photo-title">{{photo?.title}} <span class="brief">- Descripción breve de la foto</span></h3>
       </div>
       <div class="col-xs-2" style="min-height: 48px;">
           <div class="options-ribbon">
               <span class="glyphicon glyphicon-heart"></span>
               <p class="inline-text">{{photo?.likes}}</p>
+              <!-- Añade cuantas referencias tiene una foto -->
               <span class="glyphicon glyphicon-bookmark"></span>
-              <p class="inline-text">{{photo?.references}}</p>
+              <p class="inline-text">{{photo?.comments}}</p> 
           </div>
       </div>
     </div>
@@ -44,11 +46,13 @@
       </div>
     </div>
     <div class="col-md-4 photo-comments-container">
-        <div class="row" *ngFor="let comment of photo.commets">
+        <!-- Muestra todos comentario de esta foto -->
+        <!-- Corrige un fallo que genera error -->
+        <div class="row" *ngFor="let comment of photo.comments">
           <div class="col-md-1"></div>
           <div class="col-md-2">
             <div  class="round-picture" 
-                  [ngStyle]="{'background-image': 'url('+comment.thumbUrl+'), url(assets/img/default_profile.png)'}">
+                  [ngStyle]="{'background-image': 'url('+comment?.thumbUrl+'), url(assets/img/default_profile.png)'}">
             </div>
           </div>
           <div class="col-md-9" style="padding-left: 0px;">
