@@ -15,16 +15,19 @@ export class DiscoverComponent implements OnInit {
 
   ngOnInit() {
     // Load Images structure from "server"
-    this.images = this.imageService.imagenesExplorar();
+    this.images = this.imageService.imagenes();
   }
 
   selectedTabChange(index){
     switch(index){
       case 0:
-        this.images = this.imageService.imagenesExplorar();
+        this.images = [];
+        this.images = this.imageService.imagenes();
+      
       break;
       case 1:
-        this.images = this.imageService.imagenes();
+        this.images = this.imageService.imagenesExplorar();
+      
       break;
       default:
         this.images = this.imageService.imagenes();

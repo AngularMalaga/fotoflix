@@ -18,7 +18,11 @@ export class PFImageService {
    */
   imagenesExplorar(): PFImage[] {
     let sortImg:any[];
-    sortImg = IMAGES.sort( (a:PFImage, b:PFImage) => {
+    let aux:any[] = [];
+    IMAGES.forEach(res =>{
+      aux.push(res);
+    })
+    sortImg = aux.sort( (a:PFImage, b:PFImage) => {
       return Math.floor((Math.random() * 1) + -1);
     });
     return sortImg.reverse();
