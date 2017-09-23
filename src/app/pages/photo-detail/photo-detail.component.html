@@ -9,16 +9,16 @@
     </div>
     <div class="photo-info row">
       <div class="col-xs-10">
-          <!-- Añade el comentario breve de la foto -->
+          <!-- Tarea 1. Añade el comentario breve de la foto -->
           <h3 class="photo-title">{{photo?.title}} <span class="brief">- Descripción breve de la foto</span></h3>
       </div>
       <div class="col-xs-2" style="min-height: 48px;">
           <div class="options-ribbon">
               <span class="glyphicon glyphicon-heart"></span>
               <p class="inline-text">{{photo?.likes}}</p>
-              <!-- Añade cuantas referencias tiene una foto -->
-              <span class="glyphicon glyphicon-bookmark"></span>
-              <p class="inline-text">{{photo?.comments}}</p> 
+              <!-- Tarea 2. Añade el número de referencias de una foto -->
+              <!-- <span class="glyphicon glyphicon-bookmark"></span>
+              <p class="inline-text">15</p>  -->
           </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
           <h3 class="owner-name">{{photo?.owner?.userName}} 
               <button (click)="onFollowButtonClick()" class="btn btn-default" style="float: right;">
                   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                  SEGUIR
+                  LIKE
               </button>
           </h3>
           <h4 style="text-align: left;">{{photo?.title}}</h4>
@@ -46,18 +46,18 @@
       </div>
     </div>
     <div class="col-md-4 photo-comments-container">
-        <!-- Muestra todos comentario de esta foto -->
-        <!-- Corrige un fallo que genera error -->
+        <!-- Tarea 3. Muestra todos comentario de esta foto -->
+        <!-- Tarea 4. Corrige un fallo -->
         <div class="row">
           <div class="col-md-1"></div>
           <div class="col-md-2">
             <div  class="round-picture" 
-                  [ngStyle]="{'background-image': 'url('+photo.comments[0]?.comment?.thumbUrl+'), url(assets/img/default_profile.png)'}">
+                  [ngStyle]="{'background-image': 'url('+photo.comments[0]?.thumbUrl+'), url(assets/img/default_profile.png)'}">
             </div>
           </div>
           <div class="col-md-9" style="padding-left: 0px;">
             <h4 class="owner-name">{{ photo?.comments[0]?.userName }}</h4>
-            <p style="text-align: left;">{{ photo?.comments[0]?.comment }}</p>
+            <p style="text-align: left;">{{ photo?.comments[0]?.commet }}</p>
           </div>
         </div>
     </div>
