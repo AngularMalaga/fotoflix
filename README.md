@@ -1,6 +1,9 @@
 # fotoflix
 Aplicación de gestión de fotos.
 
+#Enlace de descarga
+https://drive.google.com/open?id=0B1jj1oYZ-tKEc1dXQ3drLWhab1U
+
 # Tareas propuestas: 
 Tarea 1. Añade el comentario breve de la foto   (photo-detail.component.html)
 Tarea 2. Añade el número de referencias de una foto  (photo-detail.component.html)
