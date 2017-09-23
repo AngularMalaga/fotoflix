@@ -14,10 +14,8 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
-  { path: 'test', component: PruebaServicioImagenesComponent },
   { path: 'photo/:id', component: PhotoDetailComponent },
-  { path: '**', component: DiscoverComponent }
-
+  { path: '**', component: DiscoverComponent },
 ]
 
 @NgModule({
@@ -28,6 +26,7 @@ const appRoutes: Routes = [
     FooterComponent,
     DiscoverComponent,
     PhotoPreviewComponent,
+    // Reto 1 -> Añadir componente de detalle de foto
     PhotoHighlightDirective,
     PhotoDetailComponent,
     TabsComponent

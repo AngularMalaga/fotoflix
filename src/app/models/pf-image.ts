@@ -10,6 +10,6 @@ export interface PFImage {
   owner: PFOwner;
   imageUrl: string;
   labels?: string[];
-  commets?: PFComment[];
+  comments?: PFComment[];
   createdAt?: Date;
 }

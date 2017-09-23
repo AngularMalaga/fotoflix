@@ -1,6 +1,7 @@
   <app-tabs [tabs]="tabs" (onTabsSelectedChange)="selectedTabChange($event)"></app-tabs>
   <div class="discover-page" >
     <div class="row">
-      <pf-photo-preview *ngFor="let image of images" [photo]="image"></pf-photo-preview>
+      <!-- Muestra todas las imágenes que haya en la estrucutra de datos -->
+      <pf-photo-preview *ngFor="let photo of images" [photo]="photo"></pf-photo-preview>
     </div>
   </div>
