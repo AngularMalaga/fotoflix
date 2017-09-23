@@ -19,7 +19,6 @@ export class TabsComponent implements OnInit {
   }
 
   changeActiveTab(index){
-    console.log("cambio el active tabnan",index);
     this.activeTab = index;
     this.onTabSelectedChange.emit(index);
   }

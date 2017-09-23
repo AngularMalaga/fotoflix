@@ -10,13 +10,13 @@ export class PFImageService {
   /**
    * Devuelve todas las imágenes.
    */
-  imagenes(): PFImage[] {
+  getImagenes(): PFImage[] {
     return IMAGES;
   }
   /**
    * Devuelve todas las imágenes.
    */
-  imagenesExplorar(): PFImage[] {
+  getImagenesForOtherTabs(): PFImage[] {
     let sortImg:any[];
     sortImg = IMAGES.sort( (a:PFImage, b:PFImage) => {
       return Math.floor((Math.random() * 1) + -1);

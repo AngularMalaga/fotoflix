@@ -1,7 +1,11 @@
+  
+  <!-- Tarea 7. El componente AppTabs recibe un array de tabs y una funcion para notificar un cambio-->
   <app-tabs [tabs]="tabs" (onTabsSelectedChange)="selectedTabChange($event)"></app-tabs>
+  
+  
   <div class="discover-page" >
     <div class="row">
-      <!-- Muestra todas las imágenes que haya en la estrucutra de datos -->
-      <pf-photo-preview *ngFor="let photo of images" [photo]="photo"></pf-photo-preview>
+      <!-- Tarea 6. Muestra todas las imágenes que haya en la estrucutra de datos -->
+      <pf-photo-preview  [photo]="images[0]"></pf-photo-preview>
     </div>
   </div>
